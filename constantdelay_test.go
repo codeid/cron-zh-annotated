@@ -7,8 +7,11 @@ import (
 
 func TestConstantDelayNext(t *testing.T) {
 	tests := []struct {
+		//初始时间
 		time     string
+		//间隔
 		delay    time.Duration
+		//初始时间经过一个间隔后的时间
 		expected string
 	}{
 		// Simple cases
